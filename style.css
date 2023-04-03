@@ -43,13 +43,59 @@ The designs were created to the following widths:
 	--main-4: rgb(108, 114, 137);
 	--main-5: rgb(255, 255, 255);
 	--main-6: rgb(146, 146, 146);
+  font-family: 'Montserrat', 'Fraunces' Arial, Helvetica, sans-serif;
 }
 
 body {
 	background-color: var(--main);
-	font-family: 'Montserrat', 'Fraunces' Arial, Helvetica, sans-serif;
+  margin: 0;
+	  background-size: cover;
+    background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; background-size: cover;
 }
-.container {
+.container{
+  margin: 0 auto;
+  width: min(80%, 50em);
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 700px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+
+  }
+.container-image{
+  width: 50%;
+  padding-bottom: 2em;
+}
+
+#img2{
+  display: block;
+}
+#img1{
+  display: none;
+}
+
+}
+.container-image{
+  width: 100%;
+}
+#img1{
+  width: 100%;
+}
+#img2{
+  display: none;
+}
+
+.container-info{
+  background-color: var(--main-5);
+  padding: 2em;
+}
+
+/* .container {
   width: min(90%, 40rem);
   border: 1px solid red;
 	margin: 250px auto;
@@ -170,4 +216,4 @@ footer p{
   margin: 0 auto;
   width: 40%;
   padding-top: 50px;
-}
+} */

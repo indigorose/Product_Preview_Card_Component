@@ -49,14 +49,11 @@ The designs were created to the following widths:
 body {
 	background-color: var(--main);
   margin: 0;
-	  background-size: cover;
-    background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat; background-size: cover;
+  font-size: 16px;
 }
 .container{
   margin: 0 auto;
-  width: min(80%, 50em);
+  width: min(80%, 50rem);
   border: 1px solid red;
   display: flex;
   flex-direction: row;
@@ -65,29 +62,8 @@ body {
   .container{
     display: flex;
     flex-direction: column;
-
   }
-.container-image{
-  width: 50%;
-  padding-bottom: 2em;
-}
 
-#img2{
-  display: block;
-}
-#img1{
-  display: none;
-}
-
-}
-.container-image{
-  width: 100%;
-}
-#img1{
-  width: 100%;
-}
-#img2{
-  display: none;
 }
 
 .container-info{
